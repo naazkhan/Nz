@@ -10,10 +10,10 @@
   <title>Khan Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <!-- Boostrap Stylesheet -->
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+   <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen"> -->
 
    <!-- Our own CSS stylesheet -->
-   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+   <!-- <link rel="stylesheet" href="assets/css/styles.css" media="screen"> -->
 </head>
 <body>
   <style>
@@ -23,11 +23,20 @@
             margin-right: auto;
         }
 
+      img.thumbnail-img-3 {
+        width: 100%;
+      }
+
+      /* only if setting navbar-fixed-top */
+      main {
+        margin-top: 70px;
+      }
+
         </style>
   <!-- Start of navbar -->
   <div class="container">
-  <nav class="navbar navbar-inverse">
-      <div class="container-fluid navbar-custom">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container navbar-custom">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">
           <div class="navbar-header">
@@ -68,86 +77,76 @@
   </div>
 <!-- End of navbar -->
 
-  <div class="container">
+  <main class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>When science meets coding</h1>
-        <p>I am a research scientist working on different aspects of human biology. My research includes both experimental as well as computational approaches. The area of research mainly focused on molecular biology, comparative genomics, evolutionary genomics, structural biology, host-pathogen interaction biology and Big data analysis. I love analyzing and visualizing data for better interpretation in research decisions. In my leisure time, I love travelling,listening to music, playing badminton and drinking tea.</p>
+      <div class="col-md-12 text-center">
+        <div class="jumbotron">
+          <h1>When science meets coding</h1>
+          <p>I am a research scientist working on different aspects of human biology. My research includes both experimental as well as computational approaches. The area of research mainly focused on molecular biology, comparative genomics, evolutionary genomics, structural biology, host-pathogen interaction biology and Big data analysis. I love analyzing and visualizing data for better interpretation in research decisions. In my leisure time, I love travelling,listening to music, playing badminton and drinking tea.</p>
+        </div>
       </div>
     </div>
-  </div>
-   <main class="container" style="display:flex">
     <section id="main-bio">
       <section id="image-fluid">
-          <img id="bio-image" <img src="img/Naaz.jpg" img align = "middle" width="200px"> 
-            <hr>
-              <main class="container" style="display:flex">
-                <section id="main-bio">
-                  <section id="image-fluid">
-                    <h2 align="middle">Research Interests</h2> 
-                      <img id="research interests" <img src="img/Slide1.png" img align = "middle" width="800px">
-                   <hr>
-
-              <div class="container">
-                <h3 class="text-center">Projects</h3>
-                <div class="row">
-                  <!-- <div class="col-md-4">  -->
-                    <div class="thumbnail">
-                      <img src="img/portfolio-1.png" alt="...">
-                      <div class="caption">
-                         <h3 align = "centre">Matplotlib </h3> 
-                          <p><a href="https://github.com/naazkhan/Matplotlib-Homework">Link</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="thumbnail">
-                      <img src="img/portfolio-2.png" alt="...">
-                      <div class="caption">
-                        <h3>Plotly</h3>
-                        <p><a href="https://github.com/naazkhan/Road-accident-Population">Link</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="thumbnail">
-                      <img src="img/portfolio-4.png" alt="...">
-                      <div class="caption">
-                        <h3>Geomapping</h3>
-                        <p><a href="https://github.com/naazkhan/GeoMapping">Link</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="thumbnail">
-                      <img src="img/portfolio-3.png" alt="...">
-                      <div class="caption">
-                        <h3>Javascript</h3>
-                        <p><a href="https://github.com/naazkhan/Javascript-HW">Link</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-         </section>
+        <img id="bio-image" src="img/Naaz.jpg" width="200px"> 
+        <hr>
+        <img id="research interests" src="img/Slide1.png" width="100%">
+        <h3 class="text-center">Projects</h3>
+        <div class="row">
+          <div class="col-md-12"> 
+            <div class="thumbnail">
+              <img src="img/portfolio-1.png" alt="...">
+              <div class="caption">
+                <h3>Matplotlib </h3> 
+                <p><a href="https://github.com/naazkhan/Matplotlib-Homework">Link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/portfolio-2.png" class="thumbnail-img-3" alt="...">
+              <div class="caption">
+                <h3>Plotly</h3>
+                <p><a href="https://github.com/naazkhan/Road-accident-Population">Link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/portfolio-4.png" class="thumbnail-img-3" alt="...">
+              <div class="caption">
+                <h3>Geomapping</h3>
+                <p><a href="https://github.com/naazkhan/GeoMapping">Link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/portfolio-3.png" class="thumbnail-img-3" alt="...">
+              <div class="caption">
+                <h3>Javascript</h3>
+                <p><a href="https://github.com/naazkhan/Javascript-HW">Link</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+    </section>
+  </main>
 
-     <!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
-      <!-- <div class="two-toned-footer-color"></div> -->
-      <p class="text-muted text-muted-footer text-center">
-        &copy; Copyright Nkhan
-      </p>
-    </footer>
-    <!-- End of footer -->
-
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Start of footer -->
+  <footer class="footer">
+    <!-- <div class="two-toned-footer-color"></div> -->
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright Nkhan
+    </p>
+  </footer>
+  <!-- End of footer -->
 
 
-<!-- Bootstrap CDN --> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- Bootstrap CDN --> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
